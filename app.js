@@ -12,7 +12,7 @@ async function initApp() {
 
 async function getProjects() {
   const response = await fetch(
-    "http://portfolio.alicainmultimedia.dk/wp-json/wp/v2/projects?acf_format=standard&orderby=date&order=asc"
+    "https://portfolio.alicainmultimedia.dk/wp-json/wp/v2/projects?acf_format=standard&orderby=date&order=asc"
   ); // Fetch the data from the URL
   const data = await response.json(); // Parse the data as JSON into readable JavaScript objects (array of objects)
   return data; // Return the data
